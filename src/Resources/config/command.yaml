@@ -1,0 +1,5 @@
+services:
+    desing_patterns.command.singleton:
+        class: App\Command\Singleton
+        tags:
+          - { name: 'console.command', command: 'training:singleton' }
