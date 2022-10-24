@@ -3,3 +3,8 @@ services:
         class: App\Command\Singleton
         tags:
           - { name: 'console.command', command: 'training:singleton' }
+
+    design_patterns.command.factory_method:
+        class: App\Command\FactoryMethod
+        tags:
+          - { name: 'console.command', command: 'training:factory_method' }
