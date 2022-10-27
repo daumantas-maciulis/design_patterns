@@ -8,3 +8,8 @@ services:
         class: App\Command\FactoryMethod
         tags:
           - { name: 'console.command', command: 'training:factory_method' }
+
+    desing_patterns.command.abstract_factory:
+        class: App\Command\AbstractFactory
+        tags:
+          - { name: 'console.command', command: 'training:abstract_factory' }
