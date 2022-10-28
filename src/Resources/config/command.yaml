@@ -13,3 +13,8 @@ services:
         class: App\Command\AbstractFactory
         tags:
           - { name: 'console.command', command: 'training:abstract_factory' }
+
+    design_patterns.command.builder:
+        class: App\Command\Builder
+        tags:
+          - { name: 'console.command', command: 'training:builder' }
