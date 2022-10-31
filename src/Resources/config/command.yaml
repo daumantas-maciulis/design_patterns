@@ -23,3 +23,8 @@ services:
         class: App\Command\Adapter
         tags:
           - { name: 'console.command', command: 'training:adapter' }
+
+    design_patterns.command.strategy:
+      class: App\Command\Strategy
+      tags:
+        - { name: 'console.command', command: 'training:strategy' }
