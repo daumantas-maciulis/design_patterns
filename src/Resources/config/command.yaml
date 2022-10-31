@@ -18,3 +18,8 @@ services:
         class: App\Command\Builder
         tags:
           - { name: 'console.command', command: 'training:builder' }
+
+    design_patterns.command.adapter:
+        class: App\Command\Adapter
+        tags:
+          - { name: 'console.command', command: 'training:adapter' }
